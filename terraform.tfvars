@@ -1,4 +1,4 @@
-aws_region         = "us-east-1"
+aws_region         = "ap-south-1"
 instance_name      = "my-ec2-instance"
 instance_type      = "t2.micro"
 ami_id             = "ami-0abcdef1234567890"
