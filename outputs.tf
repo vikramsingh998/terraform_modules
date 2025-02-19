@@ -1,10 +1,9 @@
 output "instance_id" {
   description = "ID of the created EC2 instance"
-  value       = aws_instance.this.id
+  value       = module.ec2.instance_id
 }
 
 output "public_ip" {
   description = "Public IP of the created EC2 instance"
-  value       = aws_instance.this.public_ip
+  value       = module.ec2.public_ip
 }
-

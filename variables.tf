@@ -1,3 +1,8 @@
+variable "aws_region" {
+  description = "AWS region where resources will be created"
+  type        = string
+}
+
 variable "instance_name" {
   description = "Name of the EC2 instance"
   type        = string
@@ -6,6 +11,7 @@ variable "instance_name" {
 variable "instance_type" {
   description = "Type of EC2 instance"
   type        = string
+  default     = "t2.micro"
 }
 
 variable "ami_id" {
@@ -19,7 +25,7 @@ variable "key_name" {
 }
 
 variable "subnet_id" {
-  description = "Subnet ID where the instance will be deployed"
+  description = "VPC Subnet ID where the instance will be deployed"
   type        = string
 }
 
